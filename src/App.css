@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Russo+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Ultra&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(13, 25, 44, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: Outfit;
+}
+
+.container {
+  width: 330px;
+  height: 543px;
+  flex-shrink: 0;
+  background-color: rgba(21, 38, 63, 1);
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 15px;
+  background: var(--very-dark-blue-card-bg, #15263f);
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+.img1 > img {
+  width: 278px;
+  height: 278px;
+  flex-shrink: 0;
+  z-index: 3;
+}
+
+.img1 {
+  width: 278px;
+  height: 278px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background-image: url("./assets/images/mainPicture.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.img1:hover {
+  background-color: rgba(0, 255, 248, 1);
+  opacity: 60%;
+  border-radius: 8px;
+  background-image: url("./assets/icons/Eye.png");
+  background-position: 50% 50%;
+  background-size: 48px 48px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.card {
+  width: 100%;
+  height: 195px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.card > h1 {
+  color: var(--White, #fff);
+  font-feature-settings: "liga" off, "clig" off;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card > h1:hover {
+  color: rgba(0, 255, 248, 1);
+  cursor: pointer;
+}
+
+.card > p {
+  color: var(--Soft-Blue, #8bacd9);
+  font-feature-settings: "liga" off, "clig" off;
+  font-family: Outfit;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+.block {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.card3 {
+  width: 90px;
+}
+
+.card3 > p {
+  color: var(--Cyan, #00fff8);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card3 > img {
+  width: 11px;
+  height: 18px;
+}
+
+.card4 {
+  width: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.card4 > p {
+  color: var(--Soft-Blue, #8bacd9);
+  font-family: Outfit;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.card4 > img {
+  width: 16px;
+  height: 16px;
+}
+
+.line {
+  width: 278px;
+  height: 1px;
+  flex-shrink: 0;
+  background: var(--very-dark-blue-line, #2e405a);
+}
+
+.lastDiv {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.lastDiv > img {
+  width: 33px;
+  height: 33px;
+  flex-shrink: 0;
+  border-radius: 33px;
+  border: 1px solid var(--White, #fff);
+}
+
+.lastDiv > p {
+  color: var(--Soft-Blue, #8bacd9);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+span {
+  color: var(--White, #fff);
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: 4px;
+}
+
+span:hover {
+  color: rgba(0, 255, 248, 1);
+  cursor: pointer;
+}
+
+@media (max-width: 1800px) and (min-width: 900px) {
+  .container {
+    width: 350px;
+    height: 596px;
+    padding: 25px;
+  }
+
+  .img1 {
+    width: 302px;
+    height: 302px;
+  }
+
+  .card {
+    height: 220px;
+  }
+
+  .line {
+    width: 100%;
+  }
+}
