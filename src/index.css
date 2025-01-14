@@ -32,20 +32,18 @@ body {
   box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
 }
 
-.img1 > img {
-  width: 278px;
-  height: 278px;
-  flex-shrink: 0;
-  z-index: 3;
-}
-
 .img1 {
   width: 278px;
   height: 278px;
   flex-shrink: 0;
   border-radius: 8px;
-  z-index: 1;
   position: relative;
+}
+
+.img1 > img {
+  width: 278px;
+  height: 278px;
+  flex-shrink: 0;
 }
 
 .hover {
@@ -54,7 +52,6 @@ body {
   flex-shrink: 0;
   border-radius: 8px;
   position: absolute;
-  z-index: 1;
   top: 0;
 }
 
