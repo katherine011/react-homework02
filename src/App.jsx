@@ -10,6 +10,7 @@ function App() {
      <div className='container'>
       <div className='img1'>
         <img src={img1} alt="" className='kath'/>
+        <div className='hover'></div>
       </div>
       <div className='card'>
         <h1>Equilibrium #3429</h1>
